@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>HTML LAYOUTING</title>
+    <style>
+        body {
+            font-family: "Avenir Next";
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: maroon;
+            color: #fff;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .header-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .header-nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        .main {
+            padding: 20px 88px 80px;
+        }
+
+        .contents {
+            margin-top: 50px;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #dee7ec;
+            font-size: 28px;
+            padding-bottom: 15px;
+            margin-bottom: 50px;
+        }
+
+        .contents-item {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .contents-item:last-child {
+            margin-right: 0;
+        }
+
+        .contents-item p {
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        .contact-form {
+            padding-top: 50px;
+        }
+
+        input, textarea {
+            width: calc(100% - 40px);
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding: 20px;
+            font-size: 18px;
+            border: 2px solid #dee7ec;
+            box-sizing: border-box;
+        }
+
+        .contact-submit {
+            background-color: #dee7ec;
+            color: #889eab;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: maroon;
+            color: #fff;
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">PAW</div>
+        <div class="header-nav">
+            <ul>
+                <li><a href="https://mochfadillahazhar.github.io/azhrfadillah.github.io/">Tentang</a></li>
+                <li>Pelajaran</li>
+                <li>Hubungi Kami</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="contents">
+            <h3 class="section-title">Pelajaran</h3>
+            <div class="contents-item">
+                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">
+                <p>HTML & CSS</p>
+            </div>
+            <div class="contents-item">
+                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg">
+                <p>PHP</p>
+            </div>
+            <div class="contents-item">
+                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg">
+                <p>Ruby</p>
+            </div>
+            <div class="contents-item">
+                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg">
+                <p>Microservices</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3 class="section-title">Hubungi Kami</h3>
+            <p>Email (Wajib Diisi)</p>
+            <input type="email">
+
+            <p>Pesan (Wajib Diisi)</p>
+            <textarea></textarea>
+
+            <p>Bidang wajib diisi.</p>
+            <input class="contact-submit" type="submit" value="Kirim">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">Pemrograman Aplikasi Web</div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="https://mochfadillahazhar.github.io/azhrfadillah.github.io/">Tentang</a></li>
+                <li>Karier</li>
+                <li>Hubungi Kami</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
